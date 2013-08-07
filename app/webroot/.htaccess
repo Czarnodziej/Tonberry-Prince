@@ -6,4 +6,4 @@
     RewriteCond %{REQUEST_URI} !^/(app/webroot/)?(img|css|js)/(.*)$
     RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
-ErrorDocument 404 /404-not-found
+ErrorDocument 404 /404.php

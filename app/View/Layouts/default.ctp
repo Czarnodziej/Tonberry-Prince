@@ -1,62 +1,95 @@
-<?php
-/**
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-?>
 <!DOCTYPE html>
-<html>
-<head>
-	<?php echo $this->Html->charset('utf8'); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
-</head>
-<body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
-</body>
-</html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <html>
+    <head>
+      <?php echo $this->Html->charset('utf8'); ?>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <title>Wesoła wycieczka w treść</title>
+      <?php
+      echo $this->Html->meta('icon');
+      echo $this->Html->css(array('style-min', 'smoothness/jquery-ui-1.10.3.custom.min.css'));?>
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+      <!--[if lt IE 7]>
+  <p class="chromeframe">Używasz <strong>przestarzałej</strong>przeglądarki.
+  Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a> 
+  lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
+  Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
+<![endif]-->
+      <div id="gora-kontener">
+        <nav id="topbar">
+          <span id="logo">
+            <a href="<?php echo $this->Html->url("/"); ?>"><i class="icon-fixed-width icon-home"></i>SuperLogo</a></span>
+          <a href="teksty">Teksty</a>
+          <a href="javascript">Javascript</a>
+          <a href="autor">Autor</a>
+        </nav>
+      </div>
+      <div id="main-container">
+        <nav id="lewa-kolumna">
+          <ul id="sidenav">
+            <li>
+              <a href="teksty"><i class="icon-fixed-width icon-book"></i>Teksty dowolne</a>
+            </li>
+            <li id="rozwin">
+              <a href="javascript"><i class="icon-fixed-width icon-magic"></i>Javascript</a>
+              <a href="javascript">"Czysty" Javascript</a>
+              <a href="javascript">jQuery</a>
+            </li>
+            <li>
+              <a href="autor"><i class="icon-fixed-width icon-thumbs-up"></i>Autorskie opisy</a>
+            </li>
+          </ul>
+          <div class="social">
+            <a href="https://www.facebook.com/marcin.marcinowy.5">
+              <span class="fb"></span>
+            </a>
+            <a href="https://twitter.com/Czarnodziej">
+              <span class="tw"></span>
+            </a>
+            <a href="mailto:pagodemc@gmail.com">
+              <span class="mail"></span>
+            </a>
+            <a href="https://github.com/Czarnodziej">
+              <span class="gh"></span>
+            </a>
+          </div>
+        </nav>
+        <article class="clearfix">
+          <!--żeby float zachowywał wysokość kontenera-->
+          <?php echo $this->Session->flash(); ?>
+          <?php echo $this->fetch('content'); ?>
+        </article>
+        <footer id="stopka-strony">
+          <div class="social">
+            <a href="https://www.facebook.com/marcin.marcinowy.5">
+              <span class="fb"></span>
+            </a>
+            <a href="https://twitter.com/Czarnodziej">
+              <span class="tw"></span>
+            </a>
+            <a href="mailto:pagodemc@gmail.com">
+              <span class="mail"></span>
+            </a>
+            <a href="https://github.com/Czarnodziej">
+              <span class="gh"></span>
+            </a>
+          </div>
+          <p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
+            <?php echo $this->element('date_mod'); ?>
+          </p>
+        </footer>
+        <?php echo $this->element('sql_dump'); ?>
+        <!--[if lt IE 9]>
+        <script src="../js/vendor/respond.min.js" type="text/javascript"></script>
+        <![endif]-->
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+          <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
+          <script defer async src="../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+       <script defer async src="js/script-min.js"></script>     
+    </body>
+  </html>

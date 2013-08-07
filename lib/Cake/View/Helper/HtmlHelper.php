@@ -91,8 +91,8 @@ class HtmlHelper extends AppHelper {
 		'fieldsetstart' => '<fieldset><legend>%s</legend>',
 		'fieldsetend' => '</fieldset>',
 		'legend' => '<legend>%s</legend>',
-		'css' => '<link rel="%s" type="text/css" href="%s" %s/>',
-		'style' => '<style type="text/css"%s>%s</style>',
+		'css' => '<link rel="%s" href="%s" %s/>',
+		'style' => '<style%s>%s</style>',
 		'charset' => '<meta http-equiv="Content-Type" content="text/html; charset=%s" />',
 		'ul' => '<ul%s>%s</ul>',
 		'ol' => '<ol%s>%s</ol>',
@@ -100,7 +100,7 @@ class HtmlHelper extends AppHelper {
 		'error' => '<div%s>%s</div>',
 		'javascriptblock' => '<script%s>%s</script>',
 		'javascriptstart' => '<script>',
-		'javascriptlink' => '<script type="text/javascript" src="%s"%s></script>',
+		'javascriptlink' => '<script src="%s"%s></script>',
 		'javascriptend' => '</script>'
 	);
 
