@@ -509,6 +509,10 @@ time, mark, audio, video {
   font: inherit;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-size: 1.09em;
   font-weight: 700;
@@ -518,7 +522,6 @@ body {
   background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 2%,#0a77d5 8%,#539fe1 67%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(top, #d0e4f7 0%,#73b1e7 2%,#0a77d5 8%,#539fe1 67%,#87bcea 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top, #d0e4f7 0%,#73b1e7 2%,#0a77d5 8%,#539fe1 67%,#87bcea 100%); /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
   background-attachment: fixed; 
   padding-top: 26px; /*IE7 */
 }
@@ -559,7 +562,6 @@ a:hover {
   background: -o-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
-
 }  
 
 #gora-kontener { 
@@ -728,45 +730,45 @@ article p
 
 /** Tables **/
 table {
-	border-right:0;
-	clear: both;
-	color: #333;
-	margin-bottom: 10px;
-	width: 100%;
+  border-right:0;
+  clear: both;
+  color: #333;
+  margin-bottom: 10px;
+  width: 100%;
 }
 th {
-	border:0;
-	border-bottom:2px solid #555;
-	text-align: left;
-	padding:4px;
+  border:0;
+  border-bottom:2px solid #555;
+  text-align: left;
+  padding:4px;
 }
 th a {
-	display: block;
-	padding: 2px 4px;
-	text-decoration: none;
+  display: block;
+  padding: 2px 4px;
+  text-decoration: none;
 }
 th a.asc:after {
-	content: ' ⇣';
+  content: ' ⇣';
 }
 th a.desc:after {
-	content: ' ⇡';
+  content: ' ⇡';
 }
 table tr td {
-	padding: 6px;
-	text-align: left;
-	vertical-align: top;
-	border-bottom:1px solid #ddd;
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom:1px solid #ddd;
 }
 table tr:nth-child(even) {
-	background: #f9f9f9;
+  background: #f9f9f9;
 }
 td.actions {
-	text-align: center;
-	white-space: nowrap;
+  text-align: center;
+  white-space: nowrap;
 }
 table td.actions a {
-	margin: 0px 6px;
-	padding:2px 5px;
+  margin: 0px 6px;
+  padding:2px 5px;
 }
 
 
@@ -985,7 +987,6 @@ label {
     background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
     border-radius: 7px;
     -webkit-border-radius: 7px;

@@ -35,6 +35,7 @@ Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'
 Router::connect('/teksty', array('controller' => 'posts', 'action' => 'index'));
 Router::connect('/autor', array('controller' => 'pages', 'action' => 'display', 'autor'));
 Router::connect('/javascript', array('controller' => 'pages', 'action' => 'display', 'javascript'));
+Router::connect('/admin', array('controller' => 'posts', 'action' => 'admin'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

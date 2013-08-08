@@ -14,7 +14,7 @@
   <li><i class="icon-li icon-ok icon-large"></i>idea hucznie zwana
     <abbr title="Responsive Web Design">RWD</abbr>, która pozwala na sprawne wyświetlanie strony na wielkich monitorach oraz mniejszych ekranach tabletowo-komórkowo-smartfonowych</li>
 </ul>
-<p>Rezultat graficzny jest wyraźnie widoczny, choć daleki od perfekcjonistycznych zapędów autora. Kod źródłowy dostępny jest dla <a href="https://github.com/Czarnodziej/Charming-Vivi">wtajemniczonych</a>. <abbr title="nie mylić z oznaczeniami samochodowymi czy samolotowymi">RWD</abbr> manifestuje
+<p>Rezultat graficzny jest wyraźnie widoczny, choć daleki od perfekcjonistycznych zapędów autora. Kod źródłowy dostępny jest dla <a href="https://github.com/Czarnodziej">wtajemniczonych</a>. <abbr title="nie mylić z oznaczeniami samochodowymi czy samolotowymi">RWD</abbr> manifestuje
   samo siebie podczas gdy okno przeglądarki zmienia swój rozmiar. Polecam sprawdzić osobiście, bo to wspaniale rozrywkowy przerywnik, w przeciwieństwie do
   czytania wątpliwie interesującego tekstu.
 </p>

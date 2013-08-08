@@ -5,3 +5,9 @@ echo $this->Form->input('title', array('label' => 'Tytuł'));
 echo $this->Form->input('body', array('rows' => '3', 'label' => 'Treść'));
 echo $this->Form->input('id', array('type' => 'hidden'));
 echo $this->Form->end('Zapisz posta');
+?>
+<script type="text/javascript">
+tinymce.init({
+    selector: "#PostBody"
+ });
+</script>

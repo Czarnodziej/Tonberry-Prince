@@ -10,8 +10,10 @@
       <title>Wesoła wycieczka w treść</title>
       <?php
       echo $this->Html->meta('icon');
-      echo $this->Html->css(array('style-min', 'smoothness/jquery-ui-1.10.3.custom.min.css'));?>
-      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+      echo $this->Html->css(array('style', 'smoothness/jquery-ui-1.10.3.custom.min.css'));
+      echo $this->Html->script('vendor/modernizr-2.6.2.min.js');
+      ?>
+<script src="<?php echo $this->Html->url("/js/vendor/tinymce/tinymce.min.js"); ?>"></script>
     </head>
     <body>
       <!--[if lt IE 7]>
@@ -24,24 +26,24 @@
         <nav id="topbar">
           <span id="logo">
             <a href="<?php echo $this->Html->url("/"); ?>"><i class="icon-fixed-width icon-home"></i>SuperLogo</a></span>
-          <a href="teksty">Teksty</a>
-          <a href="javascript">Javascript</a>
-          <a href="autor">Autor</a>
+          <a href="<?php echo $this->Html->url("/teksty"); ?>">Teksty</a>
+          <a href="<?php echo $this->Html->url("/javascript"); ?>">Javascript</a>
+          <a href="<?php echo $this->Html->url("/autor"); ?>">Autor</a>
         </nav>
       </div>
       <div id="main-container">
         <nav id="lewa-kolumna">
           <ul id="sidenav">
             <li>
-              <a href="teksty"><i class="icon-fixed-width icon-book"></i>Teksty dowolne</a>
+              <a href="<?php echo $this->Html->url("/teksty"); ?>"><i class="icon-fixed-width icon-book"></i>Teksty dowolne</a>
             </li>
             <li id="rozwin">
-              <a href="javascript"><i class="icon-fixed-width icon-magic"></i>Javascript</a>
-              <a href="javascript">"Czysty" Javascript</a>
-              <a href="javascript">jQuery</a>
+              <a href="<?php echo $this->Html->url("/javascript"); ?>"><i class="icon-fixed-width icon-magic"></i>Javascript</a>
+              <a href="<?php echo $this->Html->url("/javascript"); ?>">"Czysty" Javascript</a>
+              <a href="<?php echo $this->Html->url("/javascript"); ?>">jQuery</a>
             </li>
             <li>
-              <a href="autor"><i class="icon-fixed-width icon-thumbs-up"></i>Autorskie opisy</a>
+              <a href="<?php echo $this->Html->url("/autor"); ?>"><i class="icon-fixed-width icon-thumbs-up"></i>Autorskie opisy</a>
             </li>
           </ul>
           <div class="social">
@@ -85,11 +87,12 @@
         </footer>
         <?php echo $this->element('sql_dump'); ?>
         <!--[if lt IE 9]>
-        <script src="../js/vendor/respond.min.js" type="text/javascript"></script>
+        <script src="<?php echo $this->Html->url("/js/vendor/respond.min.js"); ?>" type="text/javascript"></script>
         <![endif]-->
-          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-          <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
-          <script defer async src="../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
-       <script defer async src="js/script-min.js"></script>     
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script> window.jQuery || document.write('<script src="<?php echo $this->Html->url("/js/vendor/jquery-1.10.2.min.js"); ?>"><\/script>');</script>
+        <script defer async src="<?php echo $this->Html->url("/js/vendor/jquery-ui-1.10.3.custom.min.js"); ?>"></script>
+        <script defer async src="<?php echo $this->Html->url("/js/script-min.js"); ?>"></script>
+
     </body>
   </html>

@@ -5,7 +5,11 @@ class PostsController extends AppController {
   public $helpers = array('Html', 'Form');
   public $components = array('Session');
 
-  public function index() {
+   public function index() {
+    $this->set('posts', $this->Post->find('all'));
+  }
+  
+  public function admin() {
     $this->set('posts', $this->Post->find('all'));
   }
 
@@ -26,7 +30,7 @@ class PostsController extends AppController {
       $this->request->data['Post']['user_id'] = $this->Auth->user('id');
       if ($this->Post->save($this->request->data)) {
         $this->Session->setFlash('Post został zapisany.');
-        $this->redirect(array('action' => 'index'));
+        $this->redirect(array('action' => 'admin'));
       } else {
         $this->Session->setFlash('Dodanie posta nie udało się:(');
       }
@@ -47,7 +51,7 @@ class PostsController extends AppController {
       $this->Post->id = $id;
       if ($this->Post->save($this->request->data)) {
         $this->Session->setFlash('Twój post został zaktualizowany.');
-        $this->redirect(array('action' => 'index'));
+        $this->redirect(array('action' => 'admin'));
       } else {
         $this->Session->setFlash('Brak możliwości aktualizacji posta.');
       }
@@ -65,7 +69,7 @@ class PostsController extends AppController {
 
     if ($this->Post->delete($id)) {
       $this->Session->setFlash('Post o id: ' . $id . ' został usunięty.');
-      $this->redirect(array('action' => 'index'));
+      $this->redirect(array('action' => 'admin'));
     }
   }
 

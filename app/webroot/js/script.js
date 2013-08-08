@@ -1,5 +1,5 @@
 /* Two separate functions loaded on DOM load - one with plain JS, one with jQuery support,
-   because not all subpages use jQuery (subjected to change). And messing with separate scripts for each page is
+   because not all subpages use jQuery (subject to change). And messing with separate scripts for each page is
    not DRY enough for my taste. A good taste.*/
 
 

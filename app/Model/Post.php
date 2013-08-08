@@ -6,9 +6,9 @@ class Post extends AppModel {
       'title' => array(
           'rule' => 'notEmpty'
       ),
-      'body' => array(
-          'rule' => 'notEmpty'
-      )
+//      'body' => array(
+//          'rule' => 'notEmpty'
+//      )
   );
 
   public function isOwnedBy($post, $user) {
