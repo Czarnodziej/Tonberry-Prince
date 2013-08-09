@@ -532,11 +532,11 @@ a {
   white-space: nowrap;
 }
 
-a {
-  -webkit-transition: color 1s;
-  -moz-transition: color 1s;
-  -o-transition: color 1s;
-  transition: color 1s ;
+a:link {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s ;
 }
 
 #sidenav li {
@@ -573,7 +573,7 @@ a:hover {
 }
 
 #topbar {
-  width: 964px;
+  width: 955px;
   text-align: right;
   margin: 0 auto 0 auto;
   padding: 0;
@@ -717,21 +717,31 @@ article {
   -moz-box-shadow: black 1px 1px 1px 1px;
   box-shadow: black 1px 1px 1px 1px;
   margin-left: 175px;
-  padding-bottom: 30px;
   width: 765px;
   padding: 12px 7px;
   text-align: left;
 }
 
-article p
-{
+article {
   padding: 5px;
+}
+
+article label,
+article .submit {
+  margin: 5px;
+}
+
+article h2 {
+  margin-top: 0;
+}
+
+article ul, article ol {
+  padding-left: 20px
 }
 
 /** Tables **/
 table {
   border-right:0;
-  clear: both;
   color: #333;
   margin-bottom: 10px;
   width: 100%;
@@ -920,7 +930,7 @@ table td.actions a {
 /*---- jq label ----*/
 
 label {
-  display: inline-block;
+  display: block;
   font-size: 14px;
 }
 
@@ -934,7 +944,15 @@ label {
   -moz-box-shadow: 1px 1px 1px 1px black;
   box-shadow: 1px 1px 1px 1px black;
   margin: 10px;
+  font-size: 1em;
 }
+#tabs a:link {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
 
 /*---- media query ----*/
 
@@ -962,7 +980,6 @@ label {
   #logo {
     margin-left: 4px;
   }
-
 }
 
 @media screen and (max-width: 799px) { /* no side menu */

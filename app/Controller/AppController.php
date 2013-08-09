@@ -44,7 +44,7 @@ class AppController extends Controller {
   );
 
   public function beforeFilter() {
-    $this->Auth->allow('index', 'view', 'display');
+    $this->Auth->allow('index', 'view', 'display', 'comment');
   }
 
   public function isAuthorized($user) {
@@ -56,7 +56,7 @@ class AppController extends Controller {
     // Default deny
     return false;
   }
-
+  var $persistModel = true;
 }
 
 ;

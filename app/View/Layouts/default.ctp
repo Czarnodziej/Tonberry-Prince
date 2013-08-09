@@ -6,22 +6,24 @@
   <html>
     <head>
       <?php echo $this->Html->charset('utf8'); ?>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+      <?php echo $this->Html->meta(array('name' => 'viewport', 'content' => 'width=device-width, initial-scale=1.0, user-scalable=no')); ?>
+
       <title>Wesoła wycieczka w treść</title>
       <?php
       echo $this->Html->meta('icon');
-      echo $this->Html->css(array('style', 'smoothness/jquery-ui-1.10.3.custom.min.css'));
+      echo $this->Html->css(array('style-min', 'smoothness/jquery-ui-1.10.3.custom.min.css'));
       echo $this->Html->script('vendor/modernizr-2.6.2.min.js');
       ?>
-<script src="<?php echo $this->Html->url("/js/vendor/tinymce/tinymce.min.js"); ?>"></script>
+
     </head>
     <body>
       <!--[if lt IE 7]>
-  <p class="chromeframe">Używasz <strong>przestarzałej</strong>przeglądarki.
-  Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a> 
-  lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
-  Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
-<![endif]-->
+        <p class="chromeframe">Używasz <strong>przestarzałej</strong>przeglądarki.
+        Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a> 
+        lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
+        Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
+      <![endif]-->
       <div id="gora-kontener">
         <nav id="topbar">
           <span id="logo">
@@ -61,10 +63,10 @@
             </a>
           </div>
         </nav>
-        <article class="clearfix">
-          <!--żeby float zachowywał wysokość kontenera-->
-          <?php echo $this->Session->flash(); ?>
+        <article class="clearfix"><!--żeby float zachowywał wysokość kontenera-->
+<!--content start-->  
           <?php echo $this->fetch('content'); ?>
+<!--content end-->
         </article>
         <footer id="stopka-strony">
           <div class="social">
@@ -83,16 +85,16 @@
           </div>
           <p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
             <?php echo $this->element('date_mod'); ?>
+
           </p>
         </footer>
-        <?php echo $this->element('sql_dump'); ?>
         <!--[if lt IE 9]>
         <script src="<?php echo $this->Html->url("/js/vendor/respond.min.js"); ?>" type="text/javascript"></script>
         <![endif]-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script> window.jQuery || document.write('<script src="<?php echo $this->Html->url("/js/vendor/jquery-1.10.2.min.js"); ?>"><\/script>');</script>
-        <script defer async src="<?php echo $this->Html->url("/js/vendor/jquery-ui-1.10.3.custom.min.js"); ?>"></script>
-        <script defer async src="<?php echo $this->Html->url("/js/script-min.js"); ?>"></script>
-
+        <?php
+        echo $this->fetch('bottom_scripts');
+        echo $this->element('sql_dump');
+        ?>
+     <script defer async src="<?php echo $this->Html->url("/js/script-min.js"); ?>"></script>
     </body>
   </html>

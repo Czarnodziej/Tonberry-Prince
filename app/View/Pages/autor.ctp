@@ -23,7 +23,7 @@
 </p>
 <ul id="skills">
   <li>HTML5/CSS3 <span class="four-star"></span>
-    <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://zengrids.com/">Zen Grids</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>, IE8+.<br>
+    <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>, IE8+.<br>
       <a href="http://developers.google.com/speed/pagespeed/insights/?url=new.czarnodziej.sanfre.eu%2F">Optymalna prędkość</a>.
       <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>, <a href="http://jvi.sourceforge.net/">jVi</a> 
     </p>
@@ -34,7 +34,9 @@
     </p>
   </li>
   <li>PHP <span class="two-star"></span>
-    <p>Podstawowe zagadnienia: pętle, tablice, obiekty. <a href="http://pl.wikipedia.org/wiki/Model-View-Controller">MVC</a> piękne wypieczone w <a href="http://cakephp.org/">CakePHP</a>.</p>
+    <p>Podstawowe zagadnienia: pętle, tablice, obiekty. <a href="http://pl.wikipedia.org/wiki/Model-View-Controller">MVC</a> piękne wypieczone w <a href="http://cakephp.org/">CakePHP</a>.
+     <br>Todo: Cake Bake, optymalizacja prędkości CakePHP
+    </p>
   </li>
   <li>Apache <span class="two-star"></span>
     <p>Konfiguracja <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a>: <a href="http://httpd.apache.org/docs/2.2/vhosts/mass.html">Dynamic Virtual Hosts</a> + <a href="http://pl.wikipedia.org/wiki/Dnsmasq">Dnsmasq</a>, PHP, MySQL, cache, gzip.

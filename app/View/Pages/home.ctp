@@ -11,7 +11,6 @@
           <br>W planach są:
         </p>
         <ul class="icons-ul">
-          <li><i class="icon-li icon-screenshot icon-large"></i>Konstrukcja blogowa z wykorzystaniem frameworka Cake PHP</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Wielce użyteczne formularze z wykorzystaniem AJAX</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Wykorzystanie Javascript do stworzenia prostej gry przeglądarkowej</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Kilka artykułów nt. technologii internetowo-komputerowych z naciskiem na dostępność dla zwykłych użytkowników</li>
