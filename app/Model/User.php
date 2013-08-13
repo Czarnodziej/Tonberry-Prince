@@ -20,7 +20,7 @@ class User extends AppModel {
       'role' => array(
           'valid' => array(
               'rule' => array('inList', array('admin', 'author')),
-              'message' => 'Wybierz właściwą rolę',
+              'message' => 'Wpisz właściwą rolę',
               'allowEmpty' => false
           )
       )

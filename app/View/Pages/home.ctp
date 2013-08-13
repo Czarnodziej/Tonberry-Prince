@@ -1,5 +1,5 @@
 <header>
-          <h1>Witam tutaj, bo przecież nie gdzieś indziej.</h1>
+          <h1>Wspaniały tytuł strony.</h1>
         </header>
         <p>
           <a href="#">

@@ -2,8 +2,8 @@
 
 class PostsController extends AppController {
 
-  public $helpers = array('Html', 'Form', 'Session');
-  public $components = array('Session');
+  public $helpers = array('Html', 'Form', 'Session', 'Time');
+  public $components = array('Session', 'Security');
 
   public function index() {
     $this->set('posts', $this->Post->find('all'));
@@ -23,6 +23,17 @@ class PostsController extends AppController {
       throw new NotFoundException(__('Nieprawidłowy post'));
     }
     $this->set('post', $post);
+
+    if (!empty($this->request->data['Comment'])) {
+      $this->request->data['Comment']['class'] = 'Post';
+      $this->request->data['Comment']['foreign_id'] = $id;
+      $this->Post->Comment->create();
+      if ($this->Post->Comment->save($this->request->data)) {
+        $this->Session->setFlash(__('Komentarz został zapisany.', true), 'success');
+        $this->redirect(array('action' => 'view', $id));
+      }
+      $this->Session->setFlash(__('Komentarz nie został zapisany. Spróbuj ponownie.', true), 'warning');
+    }
   }
 
   public function add() {
