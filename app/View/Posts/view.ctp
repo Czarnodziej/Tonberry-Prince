@@ -1,5 +1,5 @@
 <h2><?php echo h($post['Post']['title']); ?></h2>
-<p><small>Utworzony: <?php echo $post['Post']['modified']; ?></small></p>
+<p>Utworzony: <?php echo $this->time->format('d.m.o G:i:s', $post['Post']['created']); ?></p>
 <br>
 <p><?php echo ($post['Post']['body']); ?></p>
 <?php echo $this->Form->create('Comment', array('url' => array('controller' => 'posts', 'action' => 'view', $post['Post']['id']))); ?>
@@ -13,6 +13,7 @@
   </div>
 <?php endforeach; ?>
 <!-- add comment   -->
+<hr>
 <fieldset>
   <legend><?php __('Add Comment'); ?></legend>
   <?php
@@ -20,4 +21,4 @@
   echo $this->Form->input('Comment.body', array('label' => 'Treść komentarza:'));
   ?>
 </fieldset>
-<?php echo $this->Form->end('Zapisz');?>
+<?php echo $this->Form->end('Zapisz komentarz');?>
