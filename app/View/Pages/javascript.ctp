@@ -1,7 +1,7 @@
 <header>
-  <h1>Czary-mary przeglądarkowe.</h1>
+  <h2>Czary-mary przeglądarkowe.</h2>
 </header>
-<p>Przykłady skryptów z wykorzystaniem jQuery.</p>
+<p>Przykłady skryptów z wykorzystaniem jQuery:</p>
 <p>1. Wybór daty:
   <input type="text" id="datepicker" class="button" value="Klik mnie!" title="No kliknij." />
 </p>
@@ -46,7 +46,11 @@
   </div>
 </div>
 <?php $this->start('bottom_scripts'); ?>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script> window.jQuery || document.write('<script src="<?php echo $this->Html->url("/js/vendor/jquery-1.10.2.min.js"); ?>"><\/script>');</script>
-<script defer async src="<?php echo $this->Html->url("/js/vendor/jquery-ui-1.10.3.custom.min.js"); ?>"></script>
+<!--jquery+ui footer scripts-->
+<?php echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'); ?>
+
+<script> window.jQuery || document.write('<script src="<?php echo $this->Html->url("/js/vendor/jquery-1.10.2.min.js"); ?>">\x3C/script>');</script>
+<?php echo $this->Html->script('vendor/jquery-ui-1.10.3.custom.min.js'); ?>
+
+<!--end of jquery+ui footer scripts-->
 <?php $this->end(); ?>

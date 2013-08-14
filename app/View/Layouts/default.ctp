@@ -64,9 +64,10 @@
           </div>
         </nav>
         <article class="clearfix"><!--żeby float zachowywał wysokość kontenera-->
-<!--content start-->  
+          <!--content start-->  
           <?php echo $this->fetch('content'); ?>
-<!--content end-->
+          
+          <!--content end-->
         </article>
         <footer id="stopka-strony">
           <div class="social">
@@ -84,9 +85,7 @@
             </a>
           </div>
           <p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
-            <?php echo $this->element('date_mod'); ?>
-
-          </p>
+            <?php echo $this->element('date_mod'); ?></p>
         </footer>
         <!--[if lt IE 9]>
         <script src="<?php echo $this->Html->url("/js/vendor/respond.min.js"); ?>" type="text/javascript"></script>
@@ -95,6 +94,6 @@
         echo $this->fetch('bottom_scripts');
         echo $this->element('sql_dump');
         ?>
-     <script defer async src="<?php echo $this->Html->url("/js/script-min.js"); ?>"></script>
+        <script defer async src="<?php echo $this->Html->url("/js/script-min.js"); ?>"></script>
     </body>
   </html>

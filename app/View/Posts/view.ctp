@@ -8,7 +8,9 @@
 <?php foreach ($post['Comment'] as $comment): ?>
   <div class="comment">
     <p><?php echo h($comment['name']) ?>:<br>
-      <?php echo h($comment['body']) ?></p>
+      <?php echo h($comment['body']) ?><br>
+    <span style="font-size: 0.7em">Napisane dnia: <?php echo $this->time->format('d.m.o G:i:s', $comment['created']); ?></span>
+    </p>
     <br>
   </div>
 <?php endforeach; ?>
@@ -21,4 +23,4 @@
   echo $this->Form->input('Comment.body', array('label' => 'Treść komentarza:'));
   ?>
 </fieldset>
-<?php echo $this->Form->end('Zapisz komentarz');?>
+<?php echo $this->Form->end('Wyślij komentarz');?>

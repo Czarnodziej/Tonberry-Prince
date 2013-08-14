@@ -44,3 +44,4 @@ function get_page_mod_time() { //checks all website files for modification time
 }
 
 echo "Ostatnia aktualizacja: " . dateV("l j f Y", get_page_mod_time());
+?>

@@ -498,8 +498,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -510,19 +510,18 @@ time, mark, audio, video {
 }
 
 html, body {
-  height: 100%;
+  height: auto;
 }
 
 body {
   font-size: 1.09em;
-  font-weight: 700;
   background: #d0e4f7; /* Old browsers */
   background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 2%, #0a77d5 8%, #539fe1 67%, #87bcea 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0e4f7), color-stop(2%,#73b1e7), color-stop(8%,#0a77d5), color-stop(67%,#539fe1), color-stop(100%,#87bcea)); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 2%,#0a77d5 8%,#539fe1 67%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(top, #d0e4f7 0%,#73b1e7 2%,#0a77d5 8%,#539fe1 67%,#87bcea 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top, #d0e4f7 0%,#73b1e7 2%,#0a77d5 8%,#539fe1 67%,#87bcea 100%); /* IE10+ */
-  background-attachment: fixed; 
+  background-attachment: fixed;
   padding-top: 26px; /*IE7 */
 }
 
@@ -562,9 +561,9 @@ a:hover {
   background: -o-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
-}  
+}
 
-#gora-kontener { 
+#gora-kontener {
   position: fixed;
   top: 0;
   width: 100%;
@@ -573,11 +572,12 @@ a:hover {
 }
 
 #topbar {
-  width: 964px;
+  width: 976px;
   text-align: right;
   margin: 0 auto 0 auto;
   padding: 0;
   line-height: 1.09em;
+  font-weight: 700;
 }
 
 #topbar a {
@@ -606,7 +606,6 @@ a:hover {
 #main-container
 
 {
-  clear: both;
   margin: 0 auto;
   width: 960px;
 }
@@ -614,7 +613,7 @@ a:hover {
 /*---- left nav menu ----*/
 
 #lewa-kolumna {
-  float: left;
+  position:fixed;
   font-weight: bold;
   width: 168px;
 }
@@ -659,7 +658,7 @@ a:hover {
 }
 
 #sidenav li:hover a {
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 
@@ -723,7 +722,7 @@ article {
 }
 
 article {
-  padding: 5px;
+  padding: 10px;
 }
 
 article label,
@@ -737,6 +736,10 @@ article h2 {
 
 article ul, article ol {
   padding-left: 20px
+}
+
+article img {
+  margin: 5px
 }
 
 /** Tables **/
@@ -854,11 +857,11 @@ table td.actions a {
 }
 
 .half-star:after {
-  content: "\f123\f006\f006\f006\f006";   
+  content: "\f123\f006\f006\f006\f006";
 }
 
 .one-star:after {
-  content: "\f005\f006\f006\f006\f006";   
+  content: "\f005\f006\f006\f006\f006";
 }
 
 .one-star-half:after {
@@ -918,7 +921,7 @@ table td.actions a {
   width: 16em;
 }
 
-.ui-datepicker { 
+.ui-datepicker {
   font-size: 14px;
   text-align: center; /*---- week number alignment ----*/
 }
@@ -958,24 +961,24 @@ label {
 
 @media screen and (max-width: 1020px) {
 
-  article { 
+  article {
     margin-right: 10px;
     width: auto;
-  } 
+  }
 
   #stopka-strony {
     margin-right: 10px;
     width: auto;
   }
 
-  #main-container  { 
+  #main-container  {
     width: auto;
   }
 
   #topbar {
     margin-right: 8px;
     width: auto;
-  } 
+  }
 
   #logo {
     margin-left: 4px;
@@ -986,7 +989,7 @@ label {
   body {
     font-size:1em
   }
-  article { 
+  article {
     margin: 2px 5px;
   }
   body {
@@ -995,7 +998,7 @@ label {
   #topbar {
     margin-right: 3px;
     font-size: 0.9em
-  }       
+  }
 
   #stopka-strony {
     background: #9dd53a; /* Old browsers */
@@ -1032,6 +1035,7 @@ label {
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
+    margin: 10px;
   }
 }
 
