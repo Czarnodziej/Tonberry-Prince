@@ -780,7 +780,7 @@ td.actions {
   white-space: nowrap;
 }
 table td.actions a {
-  margin: 0px 6px;
+  margin: 0 6px;
   padding:2px 5px;
 }
 

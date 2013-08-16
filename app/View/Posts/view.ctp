@@ -5,7 +5,9 @@
 <?php echo $this->Form->create('Comment', array('url' => array('controller' => 'posts', 'action' => 'view', $post['Post']['id']))); ?>
 <p style="margin-top:50px;">Komentarze:</p><br>   
 <!-- Here's where we loop through our $comment array, printing out post info -->
-<?php foreach ($post['Comment'] as $comment): ?>
+<?php
+$newCommentOnTop = array_reverse( $post['Comment'] );
+foreach ($newCommentOnTop as $comment): ?>
   <div class="comment">
     <p><?php echo h($comment['name']) ?>:<br>
       <?php echo h($comment['body']) ?><br>
