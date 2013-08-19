@@ -5,7 +5,7 @@
     <th>Utworzony</th>
   </tr>
   <!-- Here's where we loop through our $posts array, printing out post info -->
-  <?php foreach ($posts as $post): ?>
+  <?php foreach ((array_reverse($posts)) as $post): ?>
     <tr>
       <td>
         <?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id'])); ?>

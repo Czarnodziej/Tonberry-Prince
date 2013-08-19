@@ -14,10 +14,18 @@
     selector: "textarea",
     plugins: [
         "advlist autolink lists link image charmap print preview anchor",
-        "searchreplace visualblocks code fullscreen",
+        "searchreplace visualblocks code fullscreen emmet",
         "insertdatetime media table contextmenu paste"
     ],
     toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
 });
+
+tinymce.init({
+    selector: '#editor',
+    plugins: 'emmet',
+    width: 800,
+    height: 400
+});
+
 </script>
 <?php $this->end(); ?>

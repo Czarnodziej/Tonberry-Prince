@@ -58,6 +58,3 @@ class AppController extends Controller {
   }
   var $persistModel = true;
 }
-
-;
-?>

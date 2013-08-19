@@ -52,7 +52,7 @@ class PostsController extends AppController {
     if (!$id) {
       throw new NotFoundException(__('Nieprawidłowy post'));
     }
-
+        
     $post = $this->Post->findById($id);
     if (!$post) {
       throw new NotFoundException(__('Nieprawidłowy post'));

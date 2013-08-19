@@ -18,8 +18,8 @@
 
     </head>
     <body>
-      <!--[if lt IE 7]>
-        <p class="chromeframe">Używasz <strong>przestarzałej</strong>przeglądarki.
+      <!--[if lt IE 8]>
+        <p class="chromeframe">Używasz <strong>przestarzałej</strong> przeglądarki.
         Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a> 
         lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
         Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
@@ -55,7 +55,7 @@
             <a href="https://twitter.com/Czarnodziej">
               <span class="tw"></span>
             </a>
-            <a href="mailto:pagodemc@gmail.com">
+            <a href="<?php echo $this->Html->url("/kontakt"); ?>">
               <span class="mail"></span>
             </a>
             <a href="https://github.com/Czarnodziej">
@@ -77,7 +77,7 @@
             <a href="https://twitter.com/Czarnodziej">
               <span class="tw"></span>
             </a>
-            <a href="mailto:pagodemc@gmail.com">
+            <a href="<?php echo $this->Html->url("/kontakt"); ?>">
               <span class="mail"></span>
             </a>
             <a href="https://github.com/Czarnodziej">
@@ -85,7 +85,7 @@
             </a>
           </div>
           <p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
-            <?php echo $this->element('date_mod'); ?></p>
+           <a href="//github.com/Czarnodziej/Tonberry-Prince/commits/master"><?php echo $this->element('date_mod'); ?></a></p>
         </footer>
         <!--[if lt IE 9]>
         <script src="<?php echo $this->Html->url("/js/vendor/respond.min.js"); ?>" type="text/javascript"></script>

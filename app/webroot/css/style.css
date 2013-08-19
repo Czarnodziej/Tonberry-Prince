@@ -902,6 +902,7 @@ table td.actions a {
   clear: both;
   text-align: right;
   width: 965px;
+  color: #222;
 }
 
 #stopka-strony p {
@@ -910,6 +911,12 @@ table td.actions a {
 
 #stopka-strony .social {
   display: none;
+}
+
+#stopka-strony a {
+  color: #222;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 /*---- jq datepicker ----*/
