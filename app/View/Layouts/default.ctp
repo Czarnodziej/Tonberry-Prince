@@ -3,7 +3,6 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <html>
     <head>
 						<?php	echo	$this->Html->charset('utf8');	?>
 
@@ -20,7 +19,7 @@
     <body>
       <!--[if lt IE 8]>
         <p class="chromeframe">Używasz <strong>przestarzałej</strong> przeglądarki.
-        Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a> 
+        Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a>
         lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
         Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
       <![endif]-->
@@ -63,10 +62,10 @@
             </a>
 												<a href="http://cakephp.org/"><img class="ciasto" src="<?php	echo	$this->Html->url("/img/cake.power.gif");	?>" alt="cakephp"></a>
           </div>
-										
+
         </nav>
         <article class="clearfix"><!--żeby float zachowywał wysokość kontenera-->
-          <!--content start-->  
+          <!--content start-->
 										<?php	echo	$this->fetch('content');	?>
 
           <!--content end-->

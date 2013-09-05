@@ -36,7 +36,7 @@ $(function() {
   /* Polish initialisation for the jQuery UI date picker plugin.
    Written by Jacek Wysocki (jacek.wysocki@gmail.com).
    Modified by Marcin Mongiało (pagodemc@gmail.com). */
-  
+
   $.datepicker.regional.pl = { //dot notation all the way
     closeText: 'Zamknij',
     prevText: '&#x3c;Poprzedni',

@@ -19,11 +19,17 @@
   czytania wątpliwie interesującego tekstu.
 </p>
 <p>Autorskie umiejętności, dla wielbiących gwiazdki oraz statystyki bez wyraźnego punktu odniesienia:</p>
-<p><button id="button" type="button"class="button">Pokaż sensowniejszy opis</button></p>
+<div id="sekcja-gwiazd">
+		<p>
+<button id="button" type="button" class="button">Pokaż sensowniejszy opis</button>
 </p>
 <ul id="skills">
   <li>HTML5/CSS3 <span class="four-star"></span>
-    <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>, IE8+.<br>
+    <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>,
+      <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>,
+      <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>,
+      <a href="http://www.sublimetext.com/">Sublime Text 3</a>,
+      <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>, IE8+.<br>
       <a href="http://developers.google.com/speed/pagespeed/insights/?url=czarnodziej.sanfre.eu%2F">Optymalna prędkość</a>.
       <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>, <a href="http://jvi.sourceforge.net/">jVi</a> 
     </p>
@@ -35,11 +41,12 @@
   </li>
   <li>PHP <span class="two-star"></span>
     <p>Podstawowe zagadnienia: pętle, tablice, obiekty. <a href="http://pl.wikipedia.org/wiki/Model-View-Controller">MVC</a> piękne wypieczone w <a href="http://cakephp.org/">CakePHP</a>.
-     <br>Todo: <a href="http://laravel.com/">Laravel</a>, <a href="http://pl.wikipedia.org/wiki/Test-driven_development">Test-driven development</a>
+      <br>Todo: <a href="http://laravel.com/">Laravel</a>, <a href="http://pl.wikipedia.org/wiki/Test-driven_development">Test-driven development</a>
     </p>
   </li>
   <li>Apache <span class="two-star"></span>
     <p>Konfiguracja <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a>: <a href="http://httpd.apache.org/docs/2.2/vhosts/mass.html">Dynamic Virtual Hosts</a> + <a href="http://pl.wikipedia.org/wiki/Dnsmasq">Dnsmasq</a>, PHP, MySQL, cache, gzip.
+      <br>Todo: Memcache, APC
     </p>
   </li>
   <li>Linux <span class="two-star"></span>
@@ -77,3 +84,4 @@
       <br>Todo: Coś śmieszniejszego.</p>
   </li>
 </ul>
+</div>

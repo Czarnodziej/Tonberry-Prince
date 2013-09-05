@@ -788,6 +788,10 @@ table td.actions a {
 /*---- author's skills ----*/
 
 
+#sekcja-gwiazd {
+  text-align: center;
+}
+
 .button {
   font-weight: 900;
   color: black;
@@ -804,6 +808,8 @@ table td.actions a {
   -ms-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+  margin: 0.8em 0;
+  
 }
 
 .button:hover{
@@ -816,6 +822,8 @@ table td.actions a {
   text-align: right;
   float: left;
   padding-left: 0;
+  width: 65%;
+  margin: auto;
 }
 
 #skills p {
@@ -1046,6 +1054,19 @@ label {
   }
 }
 
+@media screen and (max-width: 470px) { /* skills n stars align */
+  #skills {
+  width: 75%;
+
+}
+  
+}
+
+@media screen and (max-width: 400px) { /* skills n stars align */
+  #skills {
+  width: 95%;
+  }
+}
 
 /* ==========================================================================
    Helper classes
