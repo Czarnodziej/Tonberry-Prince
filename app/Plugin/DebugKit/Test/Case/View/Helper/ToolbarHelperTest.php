@@ -2,47 +2,31 @@
 /**
  * Toolbar facade tests.
  *
- * PHP 5
+ * PHP versions 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.Test.Case.View.Helper
+ * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.tests.views.helpers
  * @since         DebugKit 0.1
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  **/
-
 App::uses('View', 'View');
 App::uses('Controller', 'Controller');
 App::uses('Helper', 'View');
 App::uses('ToolbarHelper', 'DebugKit.View/Helper');
 
-/**
- * Class MockBackendHelper
- *
- * @package       DebugKit.Test.Case.View.Helper
- * @since         DebugKit 0.1
- */
 class MockBackendHelper extends Helper {
 }
 
-/**
- * Class ToolbarHelperTestCase
- *
- * @package       DebugKit.Test.Case.View.Helper
- */
 class ToolbarHelperTestCase extends CakeTestCase {
 
-/**
- * Fixtures
- *
- * @var array
- */
 	public $fixtures = array('core.post');
 
 /**
@@ -86,7 +70,6 @@ class ToolbarHelperTestCase extends CakeTestCase {
 		$result = $this->Toolbar->writeCache('test', array('stuff', 'to', 'cache'));
 		$this->assertTrue($result);
 	}
-
 /**
  * Ensure that the cache writing only affects the
  * top most level of the history stack. As this is where the current request is stored.
@@ -107,7 +90,6 @@ class ToolbarHelperTestCase extends CakeTestCase {
 		$result = $this->Toolbar->readCache('test', 1);
 		$this->assertEquals($result, array('second', 'values'));
 	}
-
 /**
  * test cache reading for views
  *
@@ -126,7 +108,6 @@ class ToolbarHelperTestCase extends CakeTestCase {
 		$result = $this->Toolbar->readCache('test');
 		$this->assertEquals($result, array('new', 'stuff'), 'Cache value is wrong %s');
 	}
-
 /**
  * Test that reading/writing doesn't work with no cache config.
  *
@@ -141,7 +122,6 @@ class ToolbarHelperTestCase extends CakeTestCase {
 		$result = $this->Toolbar->readCache('test');
 		$this->assertFalse($result, 'Reading cache succeeded with no cache config %s');
 	}
-
 /**
  * ensure that getQueryLogs works and writes to the cache so the history panel will
  * work.

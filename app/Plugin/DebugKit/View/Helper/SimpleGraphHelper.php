@@ -1,29 +1,27 @@
 <?php
 /**
+ * Simple Graph Helper
+ *
+ * Allows creation and display of extremely simple graphing elements
+ *
+ * PHP versions 5
+ *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.View.Helper
+ * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.views.helpers
  * @since         DebugKit 1.0
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
+ **/
 App::uses('AppHelper', 'View/Helper');
 App::uses('HtmlHelper', 'View/Helper');
 
-/**
- * Class SimpleGraphHelper
- *
- * Allows creation and display of extremely simple graphing elements
- *
- * @package       DebugKit.View.Helper
- * @since         DebugKit 1.0
- */
 class SimpleGraphHelper extends AppHelper {
 
 /**
@@ -56,7 +54,7 @@ class SimpleGraphHelper extends AppHelper {
  *
  * @param $value Value to be graphed
  * @param $offset how much indentation
- * @param array|\Graph $options Graph options
+ * @param $options Graph options
  * @return string Html graph
  */
 	public function bar($value, $offset, $options = array()) {
@@ -86,5 +84,4 @@ class SimpleGraphHelper extends AppHelper {
 			false
 		);
 	}
-
 }

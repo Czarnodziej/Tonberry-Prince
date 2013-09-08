@@ -1,19 +1,4 @@
 <?php
-/**
- * DebugKit DebugToolbar Component
- *
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.Controller.Component
- * @since         DebugKit 0.1
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
 App::uses('CakeLog', 'Log');
 App::uses('CakeLogInterface', 'Log');
 App::uses('DebugTimer', 'DebugKit.Lib');
@@ -23,10 +8,19 @@ App::uses('CakeEventManager', 'Event');
 App::uses('CakeEventListener', 'Event');
 
 /**
- * Class ToolbarComponent
+ * DebugKit DebugToolbar Component
  *
- * @package       DebugKit.Controller.Component
+ * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.controllers.components
  * @since         DebugKit 0.1
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 class ToolbarComponent extends Component implements CakeEventListener {
 
@@ -89,8 +83,8 @@ class ToolbarComponent extends Component implements CakeEventListener {
  * @var array
  */
 	public $javascript = array(
-		'jquery' => 'DebugKit.jquery',
-		'libs' => 'DebugKit.js_debug_toolbar'
+		'jquery' => '/debug_kit/js/jquery',
+		'libs' => '/debug_kit/js/js_debug_toolbar'
 	);
 
 /**
@@ -127,9 +121,7 @@ class ToolbarComponent extends Component implements CakeEventListener {
  * If debug is off the component will be disabled and not do any further time tracking
  * or load the toolbar helper.
  *
- * @param ComponentCollection $collection
- * @param array $settings
- * @return \ToolbarComponent
+ * @return bool
  */
 	public function __construct(ComponentCollection $collection, $settings = array()) {
 		$settings = array_merge((array)Configure::read('DebugKit'), $settings);
@@ -176,7 +168,7 @@ class ToolbarComponent extends Component implements CakeEventListener {
 /**
  * Register all the timing handlers for core events.
  *
- * @return array
+ * @return void
  */
 	public function implementedEvents() {
 		$before = function ($name) {
@@ -230,7 +222,6 @@ class ToolbarComponent extends Component implements CakeEventListener {
  * Initialize callback.
  * If automatically disabled, tell component collection about the state.
  *
- * @param Controller $controller
  * @return bool
  */
 	public function initialize(Controller $controller) {
@@ -271,7 +262,6 @@ class ToolbarComponent extends Component implements CakeEventListener {
 /**
  * Component Startup
  *
- * @param Controller $controller
  * @return bool
  */
 	public function startup(Controller $controller) {
@@ -291,10 +281,6 @@ class ToolbarComponent extends Component implements CakeEventListener {
 /**
  * beforeRedirect callback
  *
- * @param Controller $controller
- * @param $url
- * @param null $status
- * @param bool $exit
  * @return void
  */
 	public function beforeRedirect(Controller $controller, $url, $status = null, $exit = true) {
@@ -316,7 +302,6 @@ class ToolbarComponent extends Component implements CakeEventListener {
  *
  * Calls beforeRender on all the panels and set the aggregate to the controller.
  *
- * @param Controller $controller
  * @return void
  */
 	public function beforeRender(Controller $controller) {
@@ -401,7 +386,6 @@ class ToolbarComponent extends Component implements CakeEventListener {
 /**
  * collects the panel contents
  *
- * @param Controller $controller
  * @return array Array of all panel beforeRender()
  */
 	protected function _gatherVars(Controller $controller) {
@@ -434,8 +418,6 @@ class ToolbarComponent extends Component implements CakeEventListener {
 /**
  * Load Panels used in the debug toolbar
  *
- * @param $panels
- * @param $settings
  * @return void
  */
 	protected function _loadPanels($panels, $settings) {
@@ -459,7 +441,7 @@ class ToolbarComponent extends Component implements CakeEventListener {
 /**
  * Save the current state of the toolbar varibles to the cache file.
  *
- * @param \Controller|object $controller Controller instance
+ * @param object $controller Controller instance
  * @param array $vars Vars to save.
  * @return void
  */
@@ -502,5 +484,4 @@ class ToolbarComponent extends Component implements CakeEventListener {
 		array_unshift($history, $vars);
 		Cache::write($this->cacheKey, $history, 'debug_kit');
 	}
-
 }

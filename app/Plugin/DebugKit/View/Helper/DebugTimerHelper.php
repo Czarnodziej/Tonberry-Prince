@@ -1,29 +1,26 @@
 <?php
+App::uses('DebugTimer', 'DebugKit.Lib');
+App::uses('DebugMemory', 'DebugKit.Lib');
+
 /**
+ * Debug TimerHelper
+ *
+ * Tracks time and memory usage while rendering view.
+ *
+ * PHP versions 5
+ *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.View.Helper
+ * @copyright     Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
  * @since         DebugKit 2.1
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
-App::uses('DebugTimer', 'DebugKit.Lib');
-App::uses('DebugMemory', 'DebugKit.Lib');
-App::uses('Helper', 'View');
-
-/**
- * Class DebugTimerHelper
- *
- * Tracks time and memory usage while rendering view.
- *
- * @package       DebugKit.View.Helper
- */
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
+ **/
 class DebugTimerHelper extends Helper {
 
 /**
@@ -38,7 +35,7 @@ class DebugTimerHelper extends Helper {
  * Constructor
  *
  * @param View $View
- * @param array $settings
+ * @para array $array
  */
 	public function __construct(View $View, $settings = array()) {
 		parent::__construct($View, $settings);
@@ -68,7 +65,7 @@ class DebugTimerHelper extends Helper {
  * Stops the timer point before rendering a file.
  *
  * @param string $viewFile The view being rendered
- * @param string $content The contents of the view.
+ * @param string $contents The contents of the view.
  */
 	public function afterRenderFile($viewFile, $content) {
 		if ($this->_renderComplete) {

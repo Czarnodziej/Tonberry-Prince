@@ -2,29 +2,29 @@
 /**
  * DebugKit Debugger Test Case File
  *
- * PHP 5
+ * PHP versions 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.Test.Case.Lib
+ * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.tests.vendors
  * @since         debug_kit 0.1
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  **/
-
 App::uses('DebugKitDebugger', 'DebugKit.Lib');
 require_once CakePlugin::path('DebugKit') . 'Test' . DS . 'Case' . DS . 'TestFireCake.php';
 
 /**
  * Test case for the DebugKitDebugger
  *
- * @package       DebugKit.Test.Case.Lib
- * @since         debug_kit 0.1
+ * @package       debug_kit.tests
+ * @subpackage    debug_kit.tests.cases.vendors
  */
 class DebugKitDebuggerTest extends CakeTestCase {
 
@@ -73,4 +73,5 @@ class DebugKitDebuggerTest extends CakeTestCase {
 		Debugger::getInstance('Debugger');
 		Debugger::outputAs('html');
 	}
+
 }

@@ -2,27 +2,28 @@
 /**
  * Included Files Element
  *
- * PHP 5
+ * PHP versions 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2011, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.View.Elements
+ * @copyright     Copyright 2005-2011, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.views.elements
  * @since         DebugKit 2.0
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  **/
 ?>
 <h2> <?php echo __d('debug_kit', 'Included Files'); ?></h2>
 
 <h4>Include Paths</h4>
 <?php
-	foreach ($content['paths'] as $i => $path) {
-		if (strstr($path, CAKE)) {
+	foreach($content['paths'] as $i => $path) {
+		if(strstr($path, CAKE)) {
 			$content['paths'][$i] = '-> ' . $path;
 			break;
 		}

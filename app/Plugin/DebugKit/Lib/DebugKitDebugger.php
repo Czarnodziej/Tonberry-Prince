@@ -1,39 +1,34 @@
 <?php
 /**
- * DebugKit Debugger class.
+ * DebugKit Debugger class. Extends and enhances core
+ * debugger. Adds benchmarking and timing functionality.
  *
- * Extends and enhances core debugger.
- * Adds benchmarking and timing functionality.
- *
- * PHP 5
+ * PHP versions 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.Lib
+ * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.vendors
  * @since         DebugKit 0.1
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  **/
-
 App::uses('Debugger', 'Utility');
 App::uses('FireCake', 'DebugKit.Lib');
 App::uses('DebugTimer', 'DebugKit.Lib');
 App::uses('DebugMemory', 'DebugKit.Lib');
 
 /**
- * DebugKit Temporary Debugger Class
+ * Debug Kit Temporary Debugger Class
  *
  * Provides the future features that are planned. Yet not implemented in the 1.2 code base
  *
  * This file will not be needed in future version of CakePHP.
- *
- * @package       DebugKit.Lib
- * @since         DebugKit 0.1
  */
 class DebugKitDebugger extends Debugger {
 
@@ -74,7 +69,6 @@ class DebugKitDebugger extends Debugger {
 		}
 		echo '</tbody></table>';
 	}
-
 /**
  * Start an benchmarking timer.
  *
@@ -167,7 +161,7 @@ class DebugKitDebugger extends Debugger {
 /**
  * Get peak memory use
  *
- * @return integer peak memory use (in bytes). Returns 0 if memory_get_peak_usage() is not available
+ * @return integer peak memory use (in bytes).  Returns 0 if memory_get_peak_usage() is not available
  * @deprecated Use DebugMemory::getPeak() instead.
  */
 	public static function getPeakMemoryUse() {
@@ -206,7 +200,7 @@ class DebugKitDebugger extends Debugger {
  * @deprecated Use DebugMemory::clear() instead.
  */
 	public static function clearMemoryPoints() {
-		DebugMemory::clear();
+		return DebugMemory::clear();
 	}
 
 /**
@@ -225,11 +219,13 @@ class DebugKitDebugger extends Debugger {
 			FireCake::log($data['context'], 'Context');
 		}
 		if (isset($data['trace'])) {
-			FireCake::log(preg_split('/[\r\n]+/', $data['trace']), 'Trace');
+			FireCake::log($data['trace'], 'Trace');
 		}
 		FireCake::groupEnd();
 	}
+
 }
+
 
 DebugKitDebugger::getInstance('DebugKitDebugger');
 Debugger::addFormat('fb', array('callback' => 'DebugKitDebugger::fireError'));

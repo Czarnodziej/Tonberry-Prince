@@ -1,30 +1,24 @@
 <?php
 /**
- * DebugTimer Test Case
+ * DebugTimer Test Case File
  *
- * PHP 5
+ * PHP versions 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2011, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.Test.Case.Lib
+ * @copyright     Copyright 2005-2011, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.Test.Case.Lib
  * @since         debug_kit 2.0
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-
 App::uses('DebugTimer', 'DebugKit.Lib');
 
-/**
- * Class DebugTimerTest
- *
- * @package       DebugKit.Test.Case.Lib
- * @since         debug_kit 2.0
- */
 class DebugTimerTest extends CakeTestCase {
 
 /**
@@ -52,7 +46,7 @@ class DebugTimerTest extends CakeTestCase {
 		sleep(1);
 		$this->assertTrue(DebugTimer::stop('test2'));
 		$elapsed = DebugTimer::elapsedTime('test2');
-		$expected = stripos(PHP_OS, 'win') === false ? 0.999: 0.95; // Windows timer's precision is bad
+		$expected = strpos(PHP_OS, 'WIN') === false ? 0.999: 0.95; // Windows timer's precision is bad
 		$this->assertTrue($elapsed >= $expected);
 
 		DebugTimer::start('test3');

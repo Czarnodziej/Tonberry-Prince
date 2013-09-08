@@ -1,27 +1,30 @@
 <?php
+App::uses('File', 'Utility');
+
 /**
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Tidy helper - passes html through tidy on the command line, and reports markup errors
+ *
+ * PHP version 4 and 5
+ *
+ * Copyright (c) 2009, Andy Dawson
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.View.Helper
+ * @copyright     Copyright (c) 2009, Andy Dawson
+ * @link          www.ad7six.com
+ * @package       debug_kit
+ * @subpackage    debug_kit.views.helpers
  * @since         v 1.0 (22-Jun-2009)
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
  */
-
-App::uses('File', 'Utility');
 
 /**
  * TidyHelper class
  *
- * Passes html through tidy on the command line, and reports markup errors
- *
  * @uses          AppHelper
- * @package       DebugKit.View.Helper
- * @since         v 1.0 (22-Jun-2009)
+ * @package       debug_kit
+ * @subpackage    debug_kit.views.helpers
  */
 class TidyHelper extends AppHelper {
 
@@ -54,7 +57,7 @@ class TidyHelper extends AppHelper {
 		$errors = $this->tidyErrors($html, $out);
 
 		if (!$errors) {
-			return array();
+			return;
 		}
 		$result = array('Error' => array(), 'Warning' => array(), 'Misc' => array());
 		$errors = explode("\n", $errors);
@@ -143,7 +146,7 @@ class TidyHelper extends AppHelper {
 		$File->delete();
 
 		if (!file_exists($errors)) {
-			return '';
+			return;
 		}
 		$Error = new File($errors);
 		$errors = $Error->read();
@@ -156,7 +159,7 @@ class TidyHelper extends AppHelper {
  *
  * @param mixed $cmd
  * @param mixed $out null
- * @return boolean True if successful
+ * @return void
  * @access protected
  */
 	protected function _exec($cmd, &$out = null) {
@@ -176,4 +179,5 @@ class TidyHelper extends AppHelper {
 		}
 		return $_out ? $_out : true;
 	}
+
 }

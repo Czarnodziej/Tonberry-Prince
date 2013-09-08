@@ -1,44 +1,21 @@
 <?php
+App::uses('DebugPanel', 'DebugKit.Lib');
+
 /**
  * Include Panel
  *
  * Provides a list of included files for the current request
  *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.Lib.Panel
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @package       cake.debug_kit.panels
  **/
-
-App::uses('DebugPanel', 'DebugKit.Lib');
-
-/**
- * Class IncludePanel
- *
- * @package       DebugKit.Lib.Panel
- */
 class IncludePanel extends DebugPanel {
 
 /**
  * The list of plugins within the application
- *
  * @var <type>
  */
 	protected $_pluginPaths = array();
 
-/**
- * File Types
- *
- * @var array
- */
 	protected $_fileTypes = array(
 		'Cache', 'Config', 'Configure', 'Console', 'Component', 'Controller',
 		'Behavior', 'Datasource', 'Model', 'Plugin', 'Test', 'View', 'Utility',
@@ -48,7 +25,7 @@ class IncludePanel extends DebugPanel {
 /**
  * Get a list of plugins on construct for later use
  */
-	public function __construct() {
+	public function  __construct() {
 		foreach (CakePlugin::loaded() as $plugin) {
 			$this->_pluginPaths[$plugin] = CakePlugin::path($plugin);
 		}
@@ -60,7 +37,7 @@ class IncludePanel extends DebugPanel {
  * Get a list of files that were included and split them out into the various parts of the app
  *
  * @param Controller $controller
- * @return array
+ * @return void
  */
 	public function beforeRender(Controller $controller) {
 		$return = array('core' => array(), 'app' => array(), 'plugins' => array());
@@ -70,9 +47,9 @@ class IncludePanel extends DebugPanel {
 
 			if ($pluginName) {
 				$return['plugins'][$pluginName][$this->_getFileType($file)][] = $this->_niceFileName($file, $pluginName);
-			} elseif ($this->_isAppFile($file)) {
+			} else if ($this->_isAppFile($file)) {
 				$return['app'][$this->_getFileType($file)][] = $this->_niceFileName($file, 'app');
-			} elseif ($this->_isCoreFile($file)) {
+			} else if ($this->_isCoreFile($file)) {
 				$return['core'][$this->_getFileType($file)][] = $this->_niceFileName($file, 'core');
 			}
 		}
@@ -90,7 +67,7 @@ class IncludePanel extends DebugPanel {
  * @return array
  */
 	protected function _includePaths() {
-		$split = (stripos(PHP_OS, 'win') !== false) ? ';' : ':';
+		$split = (strstr(PHP_OS, 'win')) ? ';' : ':';
 		$paths = array_flip(array_merge(explode($split, get_include_path()), array(CAKE)));
 
 		unset($paths['.']);
@@ -140,7 +117,7 @@ class IncludePanel extends DebugPanel {
  * @return bool
  */
 	protected function _niceFileName($file, $type) {
-		switch ($type) {
+		switch($type) {
 			case 'app':
 				return str_replace(APP, 'APP/', $file);
 
@@ -159,7 +136,7 @@ class IncludePanel extends DebugPanel {
  */
 	protected function _getFileType($file) {
 		foreach ($this->_fileTypes as $type) {
-			if (stripos($file, '/' . $type . '/') !== false) {
+			if (preg_match(sprintf('/%s/i', $type), $file)) {
 				return $type;
 			}
 		}

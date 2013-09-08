@@ -2,6 +2,8 @@ Tonberry-Prince
 
 CakePHP blog engine with emphasis on security and simplicity.
 
+Demo: http://czarnodziej.sanfre.eu/
+
 ToDo list:
 
 - contact form email template

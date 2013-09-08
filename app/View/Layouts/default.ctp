@@ -11,7 +11,7 @@
       <title>Wesoła wycieczka w treść</title>
 						<?php
 						echo	$this->Html->meta('icon');
-						echo	$this->Html->css(array('style-min',	'smoothness/jquery-ui-1.10.3.custom.min.css'));
+						echo	$this->Html->css(array('style.min',	'smoothness/jquery-ui-1.10.3.custom.min.css'));
 						echo	$this->Html->script('vendor/modernizr-2.6.2.min.js');
 						?>
 

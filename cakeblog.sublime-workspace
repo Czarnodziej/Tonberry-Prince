@@ -1,0 +1,757 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Vin",
+				"Vintage"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "cakeblog.sublime-project",
+			"settings":
+			{
+				"buffer_size": 92,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Programy/Sublime Text Build 3047 x64/Data/Settings/SideBarEnhancements.json",
+			"settings":
+			{
+				"buffer_size": 245,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/View/Pages/autor.ctp",
+			"settings":
+			{
+				"buffer_size": 6133,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/View/Pages/home.ctp",
+			"settings":
+			{
+				"buffer_size": 1421,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/webroot/css/style.css",
+			"settings":
+			{
+				"buffer_size": 49999,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nCan I Use:\n---------\n\n  Can I Use\n  =========\n  \n  This plugin lets you instantly find out the css property support via caniuse.com\n  \n  \n  Customization\n  =============\n  \n  Include this in the user key binding to overwrite default behaviour\n  \n      { \"keys\": [\"ctrl+alt+f\"], \"command\": \"use_it\" }\n  \n  Usage\n  =====\n  \n  Mark or place your cursor over a css property and use the shortcut to open a new tab on you webbrowser with the info.\n  \n\n\nCSSLint:\n-------\n\n  CSSLint for Sublime Text\n  ========================\n  \n  Thanks for downloading this plugin! For information on how to use it, please\n  refer to the readme: \n  \n  https://github.com/austinhappel/sublime-csslint/blob/master/README.md\n",
+			"settings":
+			{
+				"buffer_size": 751,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/D/Programy/Sublime Text Build 3047 x64/Data/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+			"settings":
+			{
+				"buffer_size": 1120,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 210.0,
+		"selected_items":
+		[
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"package rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"cssl",
+				"CSSLint: Run CSSLint"
+			],
+			[
+				"package isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"package re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Enable Package"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package en",
+				"Package Control: Enable Package"
+			],
+			[
+				"package dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"package enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"package ",
+				"Package Control: Disable Package"
+			],
+			[
+				"package con",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"packga",
+				"Package Control: Disable Package"
+			],
+			[
+				"package cont re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"pack list",
+				"Package Control: List Packages"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"db:Seed",
+				"Laravel Artisan: DB:Seed"
+			],
+			[
+				"artisan",
+				"Laravel Artisan: DB:Seed"
+			],
+			[
+				"comp auto",
+				"Composer: Dump Autoload"
+			],
+			[
+				"db:See",
+				"Laravel Artisan: DB:Seed"
+			],
+			[
+				"tidy",
+				"Tidy PHP"
+			],
+			[
+				"db:s",
+				"Laravel Artisan: DB:Seed"
+			],
+			[
+				"db:Se",
+				"Laravel Artisan: DB:Seed"
+			],
+			[
+				"composer dum",
+				"Composer: Dump Autoload"
+			],
+			[
+				"artisan seed",
+				"Laravel Artisan: DB:Seed"
+			],
+			[
+				"composer",
+				"Composer: Dump Autoload"
+			],
+			[
+				"Laravel ",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"artisan migrate make",
+				"Laravel Artisan: Migrate: Make"
+			],
+			[
+				"artisan mi",
+				"Laravel Artisan: Migrate: Make"
+			],
+			[
+				"artisa",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"artisan:migrate: make",
+				"Laravel Artisan: Migrate: Make"
+			],
+			[
+				"art",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"artis",
+				"Laravel Artisan: Serve"
+			],
+			[
+				"compo",
+				"Composer: Install"
+			],
+			[
+				"compos",
+				"Composer: Install"
+			],
+			[
+				"comp",
+				"Composer: Install"
+			],
+			[
+				"artisan ",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"artisan migrate",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"ti",
+				"Tidy PHP"
+			],
+			[
+				"linter",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"package contr list",
+				"Package Control: List Packages"
+			],
+			[
+				"pack inst",
+				"Package Control: Install Package"
+			],
+			[
+				"lara art mig ma",
+				"Laravel Artisan: Migrate: Make"
+			],
+			[
+				"revert",
+				"File: Revert"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package up",
+				"Package Control: Upgrade Package"
+			]
+		],
+		"width": 498.0
+	},
+	"console":
+	{
+		"height": 319.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/vhosts/CAKEBLOG/app/View/Layouts/default.ctp",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/CombineAndMinfiy/Default (Windows).sublime-keymap",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/CSScomb/README.md",
+		"/D/vhosts/CAKEBLOG/app/webroot/css/style.css",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/Goto-CSS-Declaration/Default (Windows).sublime-keymap",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/vhosts/CAKEBLOG/app/View/Pages/javascript.ctp",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/Goto-CSS-Declaration/goto_css_declaration.sublime-settings",
+		"/D/vhosts/CAKEBLOG/app/webroot/css/style-min.css",
+		"/D/vhosts/CAKEBLOG/app/.htaccess",
+		"/D/vhosts/laraveil/composer.json",
+		"/D/vhosts/CAKEBLOG/app/View/Pages/autor.ctp",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/SublimeLinter/README.md",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/User/phpcs.sublime-settings",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/Phpcs/phpcs.sublime-settings",
+		"/D/vhosts/laraveil/vendor/cartalyst/sentry/tests/SentryTest.php",
+		"/D/vhosts/laraveil/vendor/swiftmailer/swiftmailer/test-suite/lib/yaymock/yay_convenience.php",
+		"/D/vhosts/laraveil/app/database/migrations/2013_09_02_163446_create_articles_table.php",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/PhpTidy/PhpTidy.sublime-settings",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/User/composer-sublime.sublime-settings",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/Composer/composer-sublime.sublime-settings",
+		"/D/vhosts/laraveil/app/database/migrations/2013_09_02_163458_create_pages_table.php",
+		"/D/vhosts/laraveil/app/database/migrations/2013_09_02_151707_create_users_table.php",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/D/vhosts/laraveil/app/views/layout.blade.php",
+		"/D/vhosts/laraveil/app/config/database.php",
+		"/D/vhosts/laraveil/.gitignore",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/D/vhosts/laraveil/readme.md",
+		"/D/vhosts/laraveil/_ide_helper.php",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Settings/SideBarEnhancements.json",
+		"/D/vhosts/laraveil/app/config/app.php",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/SideBarEnhancements/CHANGELOG",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/CombineAndMinfiy/readme.txt",
+		"/D/Programy/Sublime Text Build 3047 x64/Data/Packages/Package Control/Package Control.sublime-settings",
+		"/D/vhosts/laraveil/public/index.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sidebar"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "cakeblog.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Programy/Sublime Text Build 3047 x64/Data/Settings/SideBarEnhancements.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/View/Pages/autor.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2075,
+								2075
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/View/Pages/home.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								535
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/webroot/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 49999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7672,
+								7672
+							]
+						],
+						"settings":
+						{
+							"class_or_id": "sekcja-gwiazd",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7544.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								751,
+								751
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/Programy/Sublime Text Build 3047 x64/Data/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								379,
+								379
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.composer":
+	{
+		"height": 210.0
+	},
+	"output.csslint_result_view":
+	{
+		"height": 124.0
+	},
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"project": "cakeblog.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"vendor\\cartalyst\\sentry\\tests\\SentryTest.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\vhosts\\laraveil\\Laraveil.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 808.0
+	},
+	"settings":
+	{
+		"vintage":
+		{
+			"_cmdline_cd": "D:\\vhosts\\laraveil\\app\\views\\emails\\auth"
+		},
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

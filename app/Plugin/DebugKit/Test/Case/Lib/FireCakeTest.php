@@ -1,30 +1,29 @@
 <?php
 /**
- * CakeFirePHP Test Case
+ * CakeFirePHP test case
  *
- * PHP 5
+ * PHP versions 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.Test.Case.Lib
+ * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.tests.vendors
  * @since         DebugKit 0.1
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  **/
-
 App::uses('FireCake', 'DebugKit.Lib');
 require_once CakePlugin::path('DebugKit') . 'Test' . DS . 'Case' . DS . 'TestFireCake.php';
 
 /**
  * Test Case For FireCake
  *
- * @package       DebugKit.Test.Case.Lib
- * @since         DebugKit 0.1
+ * @package debug_kit.tests
  */
 class FireCakeTestCase extends CakeTestCase {
 
@@ -40,7 +39,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test getInstance cheat.
+ * test getInstance cheat.
  *
  * If this fails the rest of the test is going to fail too.
  *
@@ -55,7 +54,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test setOptions
+ * testsetoption
  *
  * @return void
  */
@@ -65,7 +64,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test Log()
+ * test Log()
  *
  * @return void
  */
@@ -83,7 +82,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test info()
+ * test info()
  *
  * @return void
  */
@@ -101,7 +100,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test info()
+ * test info()
  *
  * @return void
  */
@@ -119,7 +118,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test error()
+ * test error()
  *
  * @return void
  */
@@ -137,7 +136,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test dump()
+ * test dump()
  *
  * @return void
  */
@@ -148,7 +147,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test table() generation
+ * test table() generation
  *
  * @return void
  */
@@ -163,7 +162,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * TestStringEncoding
+ * testStringEncoding
  *
  * @return void
  */
@@ -179,7 +178,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test object encoding
+ * test object encoding
  *
  * @return void
  */
@@ -193,7 +192,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test trace()
+ * test trace()
  *
  * @return void
  */
@@ -208,7 +207,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test enabling and disabling of FireCake output
+ * test enabling and disabling of FireCake output
  *
  * @return void
  */
@@ -223,7 +222,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test correct line continuation markers on multi line headers.
+ * test correct line continuation markers on multi line headers.
  *
  * @return void
  */
@@ -239,7 +238,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test inclusion of line numbers
+ * test inclusion of line numbers
  *
  * @return void
  */
@@ -252,7 +251,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test Group messages
+ * test Group messages
  *
  * @return void
  */
@@ -267,7 +266,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test fb() parameter parsing
+ * test fb() parameter parsing
  *
  * @return void
  */
@@ -300,7 +299,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test DetectClientExtension.
+ * testClientExtensionDetection.
  *
  * @return void
  */
@@ -318,7 +317,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Test of Non Native JSON encoding.
+ * test of Non Native JSON encoding.
  *
  * @return void
  */
@@ -335,7 +334,7 @@ class FireCakeTestCase extends CakeTestCase {
 	}
 
 /**
- * Reset the FireCake counters and headers.
+ * reset the FireCake counters and headers.
  *
  * @return void
  */

@@ -1,31 +1,28 @@
 <?php
 /**
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.View.Helper
- * @since         DebugKit 0.1
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
-App::uses('ToolbarHelper', 'DebugKit.View/Helper');
-App::uses('Security', 'Utility');
-
-/**
  * Html Toolbar Helper
  *
  * Injects the toolbar elements into HTML layouts.
  * Contains helper methods for
  *
+ * PHP versions 5
  *
- * @package       DebugKit.View.Helper
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.views.helpers
  * @since         DebugKit 0.1
- */
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
+ **/
+App::uses('ToolbarHelper', 'DebugKit.View/Helper');
+App::uses('Security', 'Utility');
+
 class HtmlToolbarHelper extends ToolbarHelper {
 
 /**
@@ -48,7 +45,6 @@ class HtmlToolbarHelper extends ToolbarHelper {
  * @param mixed $values Array to make pretty.
  * @param int $openDepth Depth to add open class
  * @param int $currentDepth current depth.
- * @param bool $doubleEncode
  * @return string
  */
 	public function makeNeatArray($values, $openDepth = 0, $currentDepth = 0, $doubleEncode = false) {
@@ -87,7 +83,7 @@ class HtmlToolbarHelper extends ToolbarHelper {
 				$value = 'function';
 			}
 
-			if (($value instanceof ArrayAccess || $value instanceof Iterator || is_array($value)) && !empty($value)) {
+			if (is_array($value) && !empty($value)) {
 				$out .= $this->makeNeatArray($value, $openDepth, $nextDepth, $doubleEncode);
 			} else {
 				$out .= h($value, $doubleEncode);
@@ -111,11 +107,9 @@ class HtmlToolbarHelper extends ToolbarHelper {
 
 /**
  * Start a panel.
- * Make a link and anchor.
+ * make a link and anchor.
  *
- * @param $title
- * @param $anchor
- * @return string
+ * @return void
  */
 	public function panelStart($title, $anchor) {
 		$link = $this->Html->link($title, '#' . $anchor);
@@ -140,7 +134,7 @@ class HtmlToolbarHelper extends ToolbarHelper {
 	}
 
 /**
- * Send method
+ * send method
  *
  * @return void
  */
@@ -173,11 +167,10 @@ class HtmlToolbarHelper extends ToolbarHelper {
  * Generates a SQL explain link for a given query
  *
  * @param string $sql SQL query string you want an explain link for.
- * @param $connection
  * @return string Rendered Html link or '' if the query is not a select/describe
  */
 	public function explainLink($sql, $connection) {
-		if (!preg_match('/^[\s()]*SELECT/i', $sql)) {
+		if (!preg_match('/^(SELECT)/i', $sql)) {
 			return '';
 		}
 		$hash = Security::hash($sql . $connection, null, true);
@@ -202,5 +195,4 @@ class HtmlToolbarHelper extends ToolbarHelper {
 		$form .= $this->Form->end();
 		return $form;
 	}
-
 }

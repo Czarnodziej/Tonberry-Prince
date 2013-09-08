@@ -2,21 +2,22 @@
  * Debug Toolbar Javascript.
  *
  * Creates the DEBUGKIT namespace and provides methods for extending
- * and enhancing the Html toolbar. Includes library agnostic Event, Element,
+ * and enhancing the Html toolbar.  Includes library agnostic Event, Element,
  * Cookie and Request wrappers.
  *
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       DebugKit.webroot.js
+ * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit.views.helpers
  * @since         DebugKit 0.1
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 var DEBUGKIT = function () {
 	var undef;
@@ -455,7 +456,7 @@ DEBUGKIT.Util.Request = function (options) {
 		//open connection
 		this.transport.open(this.options.method, url, this.options.async);
 
-		//set statechange and pass the active XHR object to it. From here it handles all status changes.
+		//set statechange and pass the active XHR object to it.  From here it handles all status changes.
 		this.transport.onreadystatechange = function () {
 			self.onReadyStateChange.apply(self, arguments);
 		};
@@ -700,7 +701,7 @@ DEBUGKIT.toolbar = function () {
 			return false;
 		},
 
-		// Deactivate a panel. use true to hide all panels.
+		// Deactivate a panel.  use true to hide all panels.
 		deactivatePanel: function (id) {
 			if (id === true) {
 				for (var i in this.panels) {
