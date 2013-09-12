@@ -738,9 +738,10 @@ article ul, article ol {
   padding-left: 20px
 }
 
-article img {
-  margin: 5px
-}
+  .obrazek {
+    display: block;
+    margin: 10px auto;
+  }
 
 /** Tables **/
 table {
@@ -809,7 +810,7 @@ table td.actions a {
   -o-transition: 1s;
   transition: 1s;
   margin: 0.8em 0;
-  
+
 }
 
 .button:hover{
@@ -1059,7 +1060,7 @@ label {
   width: 75%;
 
 }
-  
+
 }
 
 @media screen and (max-width: 400px) { /* skills n stars align */
