@@ -2,7 +2,7 @@ Tonberry-Prince
 
 CakePHP blog engine with emphasis on security and simplicity.
 
-Demo: http://czarnodziej.sanfre.eu/
+[Demo](http://www.cake.czarnodziej.sanfre.eu/)
 
 ToDo list:
 
