@@ -4,19 +4,6 @@ CakePHP blog engine with emphasis on security and simplicity.
 
 [Demo](http://www.cake.czarnodziej.sanfre.eu/)
 
-ToDo list:
-
-- contact form email template
-- not-annoying anti-spam engine in both comments and contact form
-- divide code into reusable plugins and components
-- basic content put into blog entries
-- some css improvements
-- simple JavaScript game
-- more jQuery(UI) implementations, just for fun
-
-- implementing solutions mentioned above into various template pages based on wizardry such as Foundation 4, Yeoman, Sass and jQuery.
-
-
 CakePHP
 =======
 
