@@ -17,4 +17,9 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 ?>
+Imię: <?php echo $name; ?>
+
+Adres e-mail: </php echo $email; ?>
+
+Treść: </br>
 <?php echo $content; ?>

@@ -15,10 +15,9 @@ class ContactController extends AppController {
         // send email with CakeEmail
         $Email = new CakeEmail();
         $Email->config('smtp');
-       // $Email->sender($name); to be used in eemail template
-        $Email->from($email);
+        $Email->from('cake@insanet.pl');
         $Email->to('pagodemc@gmail.com'); //my email address
-        $Email->subject($subject);
+        $Email->subject('Imie: ' . $name . ' /Adres: ' . $email . ' /Temat: '. $subject);
         $Email->send($message);
         $this->Session->setFlash('Wiadomość wysłana pomyślnie:)');
       } else {

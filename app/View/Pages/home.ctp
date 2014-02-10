@@ -18,3 +18,11 @@
 <p>Wszystkie powyższe założenia będą wdrażane z zachowaniem wysokiej przejrzystości strony i dostępności zawartych tutaj informacji. Idąc rozwojowym torem,
   powyższych celów będzie więcej, bo apetyt na ów rozwój rośnie wraz z ilością poznawanych technologii (<i class="icon-food icon-large"></i> + <i class="icon-cogs icon-large"></i> =
   <i class="icon-smile icon-large"></i>). A tych nie brakuje.</p>
+  <p>
+	Wersje strony:
+	<ul>
+		<li><a href="//insanet.pl/">Laravel 4 </a></li>
+		<li><a href="//cake.insanet.pl">CakePHP(obecna wersja)</a></li>
+		<li><a href="//old.insanet.pl">HTML</a></li>
+	</ul>
+</p>

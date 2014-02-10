@@ -88,6 +88,7 @@
           <p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
 												<a href="//github.com/Czarnodziej/Tonberry-Prince/commits/master"><?php	echo	$this->element('date_mod');	?></a></p>
         </footer>
+        </div>
         <!--[if lt IE 9]>
         <script src="<?php	echo	$this->Html->url("/js/vendor/respond.min.js");	?>" type="text/javascript"></script>
         <![endif]-->
