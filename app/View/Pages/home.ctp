@@ -18,7 +18,7 @@
 	Wersje strony:
 	<ul>
 	
-	<li><a href="//insanet.pl/">Symfony2 + Angular.js</a></li>
+	<li><a href="//insanet.pl/">Symfony2</a></li>
 	<li><a href="http://laravel.insanet.pl/">Laravel 4 </a></li>
 		<li><a href="http://cake.insanet.pl">CakePHP(obecna wersja)</a></li>
 		<li><a href="http://old.insanet.pl">HTML</a></li>

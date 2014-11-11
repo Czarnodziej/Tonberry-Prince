@@ -19,8 +19,7 @@
     <body>
       <!--[if lt IE 8]>
         <p class="chromeframe">Używasz <strong>przestarzałej</strong> przeglądarki.
-        Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a>
-        lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
+        Gorąco zalecam <a href="http://browsehappy.com/">aktualizację.</a>
         Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
       <![endif]-->
       <div id="gora-kontener">
